@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case_01</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <style>
+
+        body>section{
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+        }
+        body>section:nth-child(1){
+           background: red;
+            left: 0;
+            top: 0;
+        }
+        body>section:nth-child(2){
+            background: green;
+            right: 0;
+            top: 0;
+        }
+        body>section:nth-child(3){
+            background: orange;
+            left: 0;
+            bottom: 0;
+        }
+        body>section:nth-child(4){
+            background: deeppink;
+            right: 0;
+            bottom: 0;
+        }
+
+        body>div{
+            background: white;
+            width: 150px;
+            height: 150px;
+            z-index: 10;
+            position: absolute;
+            z-index: 2;
+
+        }
+        body>div:nth-child(5){
+            left: 0;
+            top: 0;
+            border-bottom-right-radius: 100%;
+        }
+        body>div:nth-child(6){
+            right: 0;
+            top: 0;
+            border-bottom-left-radius: 100%;
+        }
+        body>div:nth-child(7){
+            left: 0;
+            bottom: 0;
+            border-top-right-radius: 100%;
+        }
+        body>div:nth-child(8){
+            right: 0;
+            bottom: 0;
+            border-top-left-radius: 100%;
+        }
+        body>div:nth-child(9){
+            background: blue;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+
+        }
+
+
+    </style>
+</head>
+<body>
+<!-- main section-->
+<section></section>
+<section></section>
+<section></section>
+<section></section>
+
+<!-- circles-->
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+<!-- center box-->
+<div>
+
+</div>
+
+</body>
+</html>
