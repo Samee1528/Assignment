@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Yeseva+One&display=swap" rel="stylesheet">
     <title>Case 02</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/fonts/css/all.css">
 
     <style>
         /*header content start*/
@@ -18,10 +19,12 @@
         }
 
         header>img{
-            width: 200px;
+            width: 100px;
             height: 50px;
             top: 0;
-            bottom: 0;
+            bottom: 20px;
+            padding-left: 20px;
+            margin: auto;
         }
 
         header>ul{
@@ -76,16 +79,81 @@
         main>nav>li>a{
             text-decoration: none;
             color: white;
+            font-weight: bold;
+            font-family: "MV Boli";
+            margin-left: 10px;
             border-bottom: 4px solid black;
             box-shadow: 5px 6px 9px -4px black;
+
+        }
+
+        main>nav>li>a:hover{
+            color: #ff721f;
         }
 
         main>section{
             position: relative;
             margin-left: 300px;
             padding: 7px;
+            min-height: 570px;
         }
         /*main content end*/
+
+
+        /*main div content start*/
+
+            main>section>section{
+                height: 300px;
+                position: relative;
+            }
+
+        main>section>section>div{
+            border: 3px solid white;
+            display: inline-block;
+            position: absolute;
+            height: 100%;
+            width: calc(100%/3);
+        }
+
+        main>section>section>div:nth-child(1){
+            left: 0;
+            background-image: url("assets/image/img1.jpg");
+            background-size: cover ;
+        }
+
+        main>section>section>div:nth-child(2){
+            left: calc(100%/3);
+            background-image: url("assets/image/22.jpg");
+            background-size: cover ;
+        }
+
+        main>section>section>div:nth-child(3){
+            left: calc((100%/3)*2);
+            background-image: url("assets/image/img3.jpg");
+            background-size: cover ;
+        }
+
+        /*main div content end*/
+
+
+        /*footer content Start*/
+            body>footer{
+                height: 59px;
+                background-color: #565454;
+            }
+
+        body>footer>p{
+            margin-top: 0;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 17px;
+            font-family: "Droid Sans Mono Dotted";
+
+        }
+
+        /*footer content end*/
 
 
     </style>
@@ -94,7 +162,7 @@
 <body>
 
 <header>
-    <img src="assets/images/ijsee.png" alt="">
+    <img src="assets/image/ijselogo.png" alt="">
     <ul>
         <li>Home</li>
         <li>Service</li>
@@ -106,10 +174,10 @@
 
 <main>
     <nav>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index-1.html">Service</a></li>
-        <li><a href="index-3.html">Contact</a></li>
-        <li><a href="index-5.html">About Us</a></li>
+        <li><i class="fas fa-home"></i><a href="index.html">Home</a></li>
+        <li><i class="fas fa-globe-americas"></i><a href="index-1.html">Service</a></li>
+        <li><i class="fas fa-address-book"></i><a href="index-3.html">Contact</a></li>
+        <li><i class="fas fa-info-circle"></i><a href="index-5.html">About Us</a></li>
     </nav>
 
     <section>
@@ -118,28 +186,13 @@
             <div></div>
             <div></div>
         </section>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque labore magni non omnis pariatur porro
-            repudiandae. Ad consequuntur, ducimus excepturi, illum impedit iusto necessitatibus nulla ratione sed sunt
-            suscipit unde.</p>
-        <p>Ad aliquam architecto, beatae commodi culpa dignissimos dolorum eaque, eligendi et exercitationem fugit
-            itaque laudantium maxime mollitia nulla obcaecati odit officiis pariatur ratione reiciendis velit voluptate
-            voluptates voluptatum. Incidunt, itaque.</p>
-        <p>Aut consequatur cupiditate doloribus nostrum obcaecati totam! Ad alias asperiores aspernatur at autem error
-            facere inventore natus nobis numquam officia omnis quaerat quam quia sapiente, sit totam vel. Maxime,
-            reiciendis.</p>
-        <p>Aliquid assumenda debitis, delectus dolore ducimus, eveniet exercitationem facilis harum inventore iste,
-            itaque maiores minima minus modi natus nisi obcaecati officia praesentium quaerat quisquam quo repudiandae
-            sapiente sunt suscipit voluptas.</p>
-        <p>Aliquid amet commodi consequatur culpa dolorem ea eos est eveniet fuga fugiat incidunt, inventore iste iusto
-            laboriosam magni non nulla officiis perspiciatis praesentium provident quia, quis tempore ut veniam
-            voluptates.</p>
 
+        <p>Blanditiis commodi deserunt dicta iusto minus, quam qui reiciendis reprehenderit sed sit. Alias cumque
+            possimus quibusdam repudiandae tempore velit! Aliquid eos eum harum nemo nisi nobis ratione, rem repellat
+            reprehenderit!</p>
         <p>Adipisci aspernatur exercitationem fugiat ipsa labore modi officia quas. Aperiam distinctio est ex excepturi
             facilis fugiat impedit incidunt magni molestias mollitia natus nostrum, praesentium quaerat, quia quibusdam
             ullam voluptatem voluptatibus.</p>
-        <p>Ad amet atque aut autem debitis dolores, eum in iusto maiores mollitia necessitatibus nesciunt nihil nobis
-            numquam optio quia quisquam ratione rem sint sunt suscipit tenetur totam voluptate voluptatem
-            voluptatum?</p>
         <p>Blanditiis commodi deserunt dicta iusto minus, quam qui reiciendis reprehenderit sed sit. Alias cumque
             possimus quibusdam repudiandae tempore velit! Aliquid eos eum harum nemo nisi nobis ratione, rem repellat
             reprehenderit!</p>
@@ -152,7 +205,13 @@
         <p>Blanditiis commodi deserunt dicta iusto minus, quam qui reiciendis reprehenderit sed sit. Alias cumque
             possimus quibusdam repudiandae tempore velit! Aliquid eos eum harum nemo nisi nobis ratione, rem repellat
             reprehenderit!</p>
-        <p>Adipisci aspernatur exercitationem fugiat ipsa labore modi officia quas.</p>
+        <p>Adipisci aspernatur exercitationem fugiat ipsa labore modi officia quas. Aperiam distinctio est ex excepturi
+            facilis fugiat impedit incidunt magni molestias mollitia natus nostrum, praesentium quaerat, quia quibusdam
+            ullam voluptatem voluptatibus.</p>
+        <p>Ad amet atque aut autem debitis dolores, eum in iusto maiores mollitia necessitatibus nesciunt nihil nobis
+            numquam optio quia quisquam ratione rem sint sunt suscipit tenetur totam voluptate voluptatem
+            voluptatum?</p>
+
 
 
 
