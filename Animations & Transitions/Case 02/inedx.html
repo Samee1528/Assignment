@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Case 02</title>
+
+    <style>
+        section{
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border: 15px solid #3d3838;
+            border-top: 15px solid red;
+            border-radius: 100%;
+            margin: auto;
+        }
+
+        section>div>h1{
+            position: absolute;
+            display: inline-block;
+            width: max-content;
+            height: max-content;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            color: white;
+            font-size: 40px;
+        }
+        section>div{
+            position: relative;
+            width: 250px;
+            height: 250px;
+            background-color: #2fb92f;
+            border-radius: 100%;
+        }
+
+        section:hover{
+            cursor: pointer;
+            transform: rotate(360deg);
+            transition: all 2s;
+        }
+
+        section:hover h1{
+            transform: rotate(-360deg);
+            transition: all 2s
+        }
+    </style>
+
+</head>
+<body>
+<section>
+    <div>
+        <h1>RWAD</h1>
+    </div>
+</section>
+</body>
+</html>
