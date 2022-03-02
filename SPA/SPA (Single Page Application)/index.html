@@ -7,6 +7,38 @@
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/fonts/css/all.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-utilities.css">
+
+    <style>
+        #custManage{
+            font-size: 45px;
+            color: black;
+            font-weight: bold;
+            font-family: "Droid Sans Mono";
+        }
+
+        #searchCust{
+            font-weight: bold;
+        }
+
+        #custId{
+            font-weight: bold;
+        }
+
+        #custName {
+            font-weight: bold;
+        }
+
+        #custAdd{
+            font-weight: bold;
+        }
+
+        #custTP{
+            font-weight: bold;
+        }
+
+        #custc
+
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -53,6 +85,66 @@
         </form>
     </div>
 </nav>
+<section id="ManageCustomerPage">
+    <div class="alert alert-secondary" role="alert">
+        <img src="assets/img/customers.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+        Customer
+    </div>
+
+    <section class="container-fluid mt-3">
+        <section class="row mt-3 justify-content-around">
+            <div class="col-12 col-md-4">
+                <div class="shadow-sm pt-3 pb-5 px-3 py-3 mt-2">
+                    <h1 id="custManage" class ="h1 mb-3">Customer Manage</h1>
+                    <div class="mb-3">
+                        <label id="searchCust" class="form-label" for="srcCusID">Search Customer</label>
+                        <input class="form-control" id="srcCusID" placeholder="Customer ID, NIC, Name" type="text">
+                    </div>
+                    <button id="btnSearch" class="btn btn-primary">Search</button>
+                    <button class="btn btn-danger">Delete</button>
+                    <button class="btn btn-success" id="btnSaveOrUpdate">Save or Update</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-5">
+                <div class="mb-3">
+                    <label id="custId" class="form-label" for="txtCusID">Customer ID</label>
+                    <input class="form-control" id="txtCusID" placeholder="Customer ID" type="text">
+                </div>
+                <div class="mb-3">
+                    <label id="custName" class="form-label" for="txtCusName">Customer Name</label>
+                    <input class="form-control" id="txtCusName" placeholder="Customer Name" type="text">
+                </div>
+                <div class="mb-3">
+                    <label id="custAdd" class="form-label" for="txtCusAddress">Customer Address</label>
+                    <input class="form-control" id="txtCusAddress" placeholder="Customer Address" type="text">
+                </div>
+                <div class="mb-3">
+                    <label id="custTP" class="form-label" for="txtCusTP">Contact Number</label>
+                    <input class="form-control" id="txtCusTP" placeholder="Contact Number" type="text">
+                </div>
+            </div>
+        </section>
+        <section class="row mt-4">
+            <div class="col">
+                <table class="table table-hover">
+                    <thead class="bg-danger text-white">
+                    <tr>
+                        <th>Customer ID</th>
+                        <th>Customer Name</th>
+                        <th>Customer Address</th>
+                        <th>Contact Number</th>
+                    </tr>
+                    </thead>
+                    <tbody id="customerTable">
+
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </section>
+</section>
 
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
