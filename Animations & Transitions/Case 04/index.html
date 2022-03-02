@@ -6,8 +6,8 @@
 
     <style>
       main{
-        width: 500px;
-        height: 280px;
+        width: 800px;
+        height: 500px;
         position: absolute;
         left: 0;
         right: 0;
@@ -15,12 +15,18 @@
         bottom: 0;
         margin: auto;
         overflow: hidden;
+          border: 5px solid black;
+
       }
 
       main>section{
         width: 400%;
         height: 100%;
         display: flex;
+        animation-name: slider;
+        animation-duration: 15s;
+          animation-direction: alternate;
+          animation-iteration-count: infinite;
       }
 
       main>section>div{
@@ -47,6 +53,25 @@
           background: url("assets/image/case43.jpg");
           background-size: cover;
           background-position: center;
+      }
+
+      @keyframes slider {
+          0%, 150%{
+              transform: translateX(0);
+          }
+          25%, 40%{
+              transform: translateX(-25%);
+          }
+          50%, 90%{
+              transform: translateX(-50%);
+          }
+
+          100%{
+              transform: translateX(-75%);
+
+          }
+
+
       }
     </style>
 
