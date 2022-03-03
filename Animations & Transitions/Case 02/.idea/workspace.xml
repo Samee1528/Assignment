@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6338bd9f-479b-490a-8527-8d6083b76e7d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Case 04/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Case 04/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SPA/SPA (Single Page Application)/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../SPA/SPA (Single Page Application)/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +67,7 @@
       <updated>1641842967132</updated>
       <workItem from="1641842969547" duration="75000" />
       <workItem from="1641843078665" duration="7339000" />
+      <workItem from="1646293240991" duration="597000" />
     </task>
     <servers />
   </component>
@@ -82,5 +84,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
