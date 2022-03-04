@@ -74,6 +74,17 @@
             font-weight: bold;
         }
 
+/*place order page----------------------*/
+        #invoiceDetailsText{
+            font-weight: bolder;
+        }
+
+        /*#TelephoneText{
+            font-weight: bold;
+        }*/
+
+
+
 
     </style>
 </head>
@@ -94,10 +105,12 @@
                     <a class="nav-link active" aria-current="page" href="#" id="HomeBtn">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" id="OrdersBtn">Orders</a>
+                    <a class="nav-link" href="#" id="ItemsBtn" >Items</a>
+
                 </li>
+
                 <li class="nav-item">
-                    <a class="nav-link" href="#" id="ItemsBtn">Items</a>
+                    <a class="nav-link" href="#" id="OrdersBtn">Orders</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -235,6 +248,221 @@
             </div>
         </section>
 
+    </section>
+</section>
+<section id="PlaceOrderPage">
+    <div class="alert alert-secondary" role="alert">
+        <i class="fas fa-shopping-bag fs-2"></i> Place Order
+    </div>
+
+    <!--main Container---------------------------->
+    <section class="container-fluid bg-light">
+        <!--Order Placing Content--------------------->
+        <section class="row">
+            <!-- Col 1 As Invoices Details-------->
+            <div class="col bg-white m-4 pb-4">
+
+                <!-- Internal Grid---------------->
+                <section class="container">
+                    <!--Row 01-->
+                    <div class="row">
+                        <div  class="bg-success mb-3 p-2 "><h4 id="invoiceDetailsText">Invoice Details</h4></div>
+                        <div class="col">
+                            <caption>Order ID:</caption>
+                            <form>
+                                <input class="form-control " type="text">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <caption>Order Date:</caption>
+                            <form>
+                                <input class="form-control " type="text">
+                            </form>
+                        </div>
+
+                    </div>
+                    <!--Row 02-->
+                    <div class="row">
+                        <div class="col">
+                            <caption>Customer:</caption>
+                            <form>
+                                <input class="form-control " type="text">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <caption>Customer_ID:</caption>
+                            <form>
+                                <input class="form-control " type="text">
+                            </form>
+                        </div>
+
+                    </div>
+                    <!--Row 03-->
+                    <div class="row">
+                        <div class="col">
+                            <caption>Name:</caption>
+                            <form>
+                                <input class="form-control " type="text">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <caption>Salary:</caption>
+                            <form>
+                                <input class="form-control " type="text">
+                            </form>
+                        </div>
+
+                    </div>
+                    <!--Row 04-->
+                    <div class="row">
+                        <div class="col">
+                            <caption>Address:</caption>
+                            <form>
+                                <input class="form-control " type="text">
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!--       Col 2 As Item Select-->
+            <div class="col bg-white m-4 pb-4">
+
+                <!--Container For Item Select Grid-->
+                <section class="container">
+                    <!--Row 01-->
+                    <div class="row">
+                        <div class="bg-success mb-3 p-2"><h4>Item Select</h4></div>
+                        <div class="col">
+                            <caption>Item:</caption>
+                            <form>
+                                <input class="form-control " type="text">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <caption>Item Code:</caption>
+                            <form>
+                                <input class="form-control " type="text">
+                            </form>
+                        </div>
+                    </div>
+
+                    <!--Row 02-->
+                    <div class="row">
+                        <div class="col">
+                            <caption>Item Name:</caption>
+                            <form>
+                                <input class="form-control " type="text">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <caption>Item Price:</caption>
+                            <form>
+                                <input class="form-control " type="text">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <caption>QtyOnH:</caption>
+                            <form>
+                                <input class="form-control " type="text">
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <!--Row 03-->
+                    <div class="row">
+                        <div class="col">
+                            <caption>Order QTY:</caption>
+                            <form>
+                                <input class="form-control " type="text">
+                            </form>
+                        </div>
+                    </div>
+
+                    <!--Row 04-->
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-danger mt-4">Add Item</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+            <!--       Col 1 As Price Total----------->
+            <div class="col bg-white m-4 pb-4">
+                <h4 class="text-primary">Total: 19,375Rs./=</h4>
+                <h4 class="text-danger">Sub Total: 13,445Rs./=</h4>
+                <!-- Internal Grid-->
+                <section class="container">
+                    <!--Row 01-->
+                    <div class="row">
+                        <div class="col">
+                            <caption>Cash:</caption>
+                            <form>
+                                <input class="form-control " type="text">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <caption>Discount:</caption>
+                            <form>
+                                <input class="form-control " type="text">
+                            </form>
+                        </div>
+                    </div>
+
+
+                    <!--Row 02-->
+                    <div class="row">
+                        <div CLASS="col">
+                            <caption>Balance:</caption>
+                            <form>
+                                <input class="form-control " type="text">
+                            </form>
+                        </div>
+                    </div>
+
+                    <!--Row 03-->
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-info mt-4">Purchase</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!--Table Content-->
+        <section class="row p-3 mb-5">
+            <div class="col">
+                <table class="table">
+                    <thead class="table-warning">
+                    <tr>
+                        <th scope="col">Customer Name</th>
+                        <th scope="col">Address</th>
+                        <th id="TelephoneText" scope="col">Telephone</th>
+                        <th scope="col">Age</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">Sumith</th>
+                        <td>Panadura</td>
+                        <td>070-8765873</td>
+                        <td>73</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Damith</th>
+                        <td>Colombo</td>
+                        <td>076-7627384</td>
+                        <td>40</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
     </section>
 </section>
 
